@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habito || Track Your Life</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="src/assets/image/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li id="homeBtn">
+                    <span><img src="src/assets/image/home-logo.png" alt="home"></span>
+                    HOME
+                </li>
+                <li id="addBtn">
+                    <span><img src="src/assets/image/add-logo.png" alt="add"></span>
+                    ADD
+                </li>
+                <li id="settingBtn">
+                    <span><img src="src/assets/image/setting-logo.png" alt="setting"></span>
+                    SETTINGS
+                </li>
+            </ul>
+        </nav>
+
+        <div class="big-box">
+
+            <!-- ------------------------------------ -->
+            <div class="nameDetails">
+                <div class="nameDetails-left">
+                    <h1>Habito</h1>
+                    <h3>LevelUp Your Life,My life My rules</h3>
+                </div>
+                <div class="nameDetails-right">
+                    <div id="addBtn2" class="addBtn">
+                        + New Habit
+                    </div>
+                </div>
+            </div>
+            <!-------------------------------------->
+
+            <div class="steakDetails">
+                <!-- ----------- -->
+                <div class="steakBox1 steakBox">
+                    <div class="steakBoxImg1 steakBoxImg">
+                        <img src="src/assets/image/fire-icon.png" alt="fire">
+                    </div>
+                    <div class="steakBoxDetails1">
+                        <h5>Current Steak</h5>
+                        <h2>01 Days</h2>
+                    </div>
+                </div>
+
+                <div class="steakBox2 steakBox">
+                    <div class="steakBoxImg2 steakBoxImg">
+                        <img src="src/assets/image/xp-icon.png" alt="xp">
+                    </div>
+                    <div class="steakBoxDetails2">
+                        <h5>Total XP</h5>
+                        <h2><span id="xpCount">0</span> XP</h2>
+                    </div>
+                </div>
+
+                <div class="steakBox3 steakBox">
+                    <div class="steakBoxImg3 steakBoxImg">
+                        <img src="src/assets/image/calender-icon.png" alt="task">
+                    </div>
+                    <div class="steakBoxDetails3">
+                        <h5>Todays Works</h5>
+                        <h2>0/<span id="totalTodaysTaskCount">0</span></h2>
+                    </div>
+                </div>
+                <!-- ----------- -->
+            </div>
+
+            <!-- ---------------------------------------------------------------------------------------- -->
+
+            <div class="daily-tasks">
+                <!-- ------------- -->
+                <div class="daily-tasks-left">
+                    <div style="display: flex; gap: 10px;" class="todays">
+                        <img style="width: 30px;" src="src/assets/image/increase-bar.png" alt="">
+                        <h1>Today's Tasks</h1>
+                    </div>
+                    <div class="tasks" id="tasks">
+                        <!-- ------------tasks------------ -->
+                    </div>
+                </div>
+                <!-- ----------- -->
+                <div class="daily-tasks-right">
+                    <div style="margin-top: 20px;" class="fireImg">
+                        <img style="width: 50px; filter: invert(1);" src="src/assets/image/fire2.png" alt="fire">
+                    </div>
+                    <div class="task-steak">
+                        <h2>15</h2>
+                        <h3>DAY STEAK</h3>
+                    </div>
+                    <div class="time-details">
+                        <div class="weekly day">
+                            <h5>WEEK GRAPH</h5>
+                        </div>
+
+                        <div class="monthly day">
+                            <h5>MONTH GRAPH</h5>
+
+                        </div>
+                        <div class="yearly day">
+                            <h5>YEAR GRAPH</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+<script type="module" src="./src/js/TaskRender.js"></script>
+<script>
+    //ADD  BUTTONS
+
+    const addBtn = document.getElementById("addBtn");
+    const addBtn2 = document.getElementById("addBtn2");
+    addBtn.addEventListener("click",(e)=>{
+        e.preventDefault();
+        window.location.href = "src/html/add.html";
+    })
+    addBtn2.addEventListener("click",(e)=>{
+        e.preventDefault();
+        window.location.href = "src/html/add.html";
+    })
+
+    //-------------------------------------//
+</script>
+</html>

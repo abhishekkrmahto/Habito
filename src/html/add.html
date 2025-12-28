@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="shortcut icon" href="../assets/image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/add.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+        <nav>
+            <ul>
+                <li id="homeBtn">
+                    <span><img src="../assets/image/home-logo.png" alt="home"></span>
+                    HOME
+                </li>
+                <li id="addBtn">
+                    <span><img src="../assets/image/add-logo.png" alt="add"></span>
+                    ADD
+                </li>
+                <li id="settingBtn">
+                    <span><img src="../assets/image/setting-logo.png" alt="setting"></span>
+                    SETTINGS
+                </li>
+            </ul>
+        </nav>
+
+        <div class="add-component">
+            <form action="index.html">
+                <input type="text" placeholder="Task" required id="taskToAdd">
+                <input type="number" placeholder="XP" required id="taskXP">
+                <div class="addBtn" id="addBtnOfAddHtml">
+                        + ADD
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script type="module" src="../js/addTask.js"></script>
+<script type="module" src="../js/AllData.js"></script>
+<script>
+    const homeBtn = document.getElementById("homeBtn")
+    homeBtn.addEventListener("click",(e)=>{
+        e.preventDefault();
+            window.location.href = "../../index.html";
+    })
+</script>
+</html>
